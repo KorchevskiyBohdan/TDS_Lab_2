@@ -15,19 +15,23 @@ namespace TDS_Lab_2_1
         private static double GetA(int i)
         {
             double local = 0;
-            while (i < i + 8) {
+            int a = i;
+
+            while (a < i + 8) {
                 local += MyFunction(i);
-                i++;
+                a++;
             }
             return local;
         }
         private static double GetB(int i)
         {
             double local = 1;
-            while (i < i + 5)
+            int a = i;
+
+            while (a < i + 5)
             {
                 local *= MyFunction(i);
-                i++;
+                a++;
             }
             return local;
         }
@@ -52,7 +56,9 @@ namespace TDS_Lab_2_1
         }
         static void Main(string[] args)
         {
-            double[] arr = new double[10000];
+            System.Diagnostics.Stopwatch sw = System.Diagnostics.Stopwatch.StartNew();
+
+            double[] arr1 = new double[10000];
             int i = 0;
 
             Parallel.For(i, i + 10000, a =>
@@ -62,15 +68,23 @@ namespace TDS_Lab_2_1
                 thread1.Start();
                 thread2.Start();
 
-                arr[i] = thread1.Result + thread2.Result;
+                arr1[i] = thread1.Result + thread2.Result;
 
-                Console.Write(arr[i] + "\n");
+                //Console.Write(arr1[i] + "\n");
 
             });
 
+            Console.WriteLine("1 algorithm: {0}", sw.ElapsedMilliseconds);
 
-          
+            sw.Restart();
 
+            double[] arr2 = new double[10000];
+
+            for (int j = 0; j < 10000; j++) {
+                arr2[j] = GetA(j) + GetB(j);
+            }
+
+            Console.WriteLine("2 algorithm: {0}", sw.ElapsedMilliseconds);
 
 
             Console.ReadKey();
