@@ -1,0 +1,7 @@
+D:\ХНУ\TDS\TDS_Lab_2\TDS_Lab_2\TDS_Lab_2_1\bin\Debug\TDS_Lab_2_1.exe.config
+D:\ХНУ\TDS\TDS_Lab_2\TDS_Lab_2\TDS_Lab_2_1\bin\Debug\TDS_Lab_2_1.exe
+D:\ХНУ\TDS\TDS_Lab_2\TDS_Lab_2\TDS_Lab_2_1\bin\Debug\TDS_Lab_2_1.pdb
+D:\ХНУ\TDS\TDS_Lab_2\TDS_Lab_2\TDS_Lab_2_1\obj\Debug\TDS_Lab_2_1.csproj.AssemblyReference.cache
+D:\ХНУ\TDS\TDS_Lab_2\TDS_Lab_2\TDS_Lab_2_1\obj\Debug\TDS_Lab_2_1.csproj.CoreCompileInputs.cache
+D:\ХНУ\TDS\TDS_Lab_2\TDS_Lab_2\TDS_Lab_2_1\obj\Debug\TDS_Lab_2_1.exe
+D:\ХНУ\TDS\TDS_Lab_2\TDS_Lab_2\TDS_Lab_2_1\obj\Debug\TDS_Lab_2_1.pdb
